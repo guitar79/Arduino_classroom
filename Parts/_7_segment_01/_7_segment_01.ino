@@ -27,12 +27,12 @@ void setup() {
   for(int i=3;i<11;i++){
     pinMode(i, OUTPUT);
   }
-  digitalWrite(10,1);
+  digitalWrite(10,HIGH);
 }
 void loop() {
 for (int i=0;i<10;i++){
  delay(1000);
- displayDigit(1);
+ displayDigit(4);
  //displayDigit(i);
 }
 }
