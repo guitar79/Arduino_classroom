@@ -1,3 +1,6 @@
 {
-    "port": "/dev/ttyS0"
+    "port": "COM3",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrisp",
+    "sketch": "Analog_IN_OUT\\cds_read_Serail_print.ino"
 }
