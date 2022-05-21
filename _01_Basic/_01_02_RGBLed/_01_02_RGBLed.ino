@@ -1,48 +1,47 @@
-
-int R_pin = 10 ; 
-int G_pin = 9 ; 
-int B_pin = 8 ; 
+int redPin = 11;
+int greenPin = 10;
+int bluePin = 9;
 
 void setup(){
-    pinMode(R_pin, OUTPUT); 
-    pinMode(G_pin, OUTPUT); 
-    pinMode(B_pin, OUTPUT); 
+    pinMode(redPin, OUTPUT); 
+    pinMode(greenPin, OUTPUT); 
+    pinMode(bluePin, OUTPUT); 
 }
  
 void loop(){
     //the LED module lights up in red
-    digitalWrite(R_pin, HIGH);
-    digitalWrite(G_pin, LOW);
-    digitalWrite(B_pin, LOW);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, LOW);
     delay(1000);
     //lthe LED module lights up in green
-    digitalWrite(R_pin, LOW);
-    digitalWrite(G_pin, HIGH);
-    digitalWrite(B_pin, LOW);
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(bluePin, LOW);
     delay(1000);
     //the LED module lights up in and blue
-    digitalWrite(R_pin, LOW);
-    digitalWrite(G_pin, LOW);
-    digitalWrite(B_pin, HIGH);
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, HIGH);
     delay(1000);
     //the LED module lights up in red and green
-    digitalWrite(R_pin, HIGH);
-    digitalWrite(G_pin, HIGH);
-    digitalWrite(B_pin, LOW);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(bluePin, LOW);
     delay(1000);
     //the LED module lights up in green and blue
-    digitalWrite(R_pin, LOW);
-    digitalWrite(G_pin, HIGH);
-    digitalWrite(B_pin, HIGH);
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(bluePin, HIGH);
     delay(1000);
     //the LED module lights up in blue and red
-    digitalWrite(R_pin, HIGH);
-    digitalWrite(G_pin, LOW);
-    digitalWrite(B_pin, HIGH);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, HIGH);
     delay(1000);
     //the LED module lights up in red, green and blue
-    digitalWrite(R_pin, HIGH);
-    digitalWrite(G_pin, HIGH);
-    digitalWrite(B_pin, HIGH);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(bluePin, HIGH);
     delay(2000);
 }
