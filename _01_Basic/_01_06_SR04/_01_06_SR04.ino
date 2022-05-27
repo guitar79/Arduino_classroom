@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 int trigPin = 2;    //Trig 핀 할당
 int echoPin = 4;    //Echo 핀 할당
+=======
+int trigPin = 9;    //Trig 핀 할당
+int echoPin = 10;    //Echo 핀 할당
+>>>>>>> 90718fe9bf76f07c8150f59fea708595a6dcda89
  
 void setup()
 {
@@ -35,4 +40,8 @@ void loop()
     Serial.println();
  
     delay(100);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 90718fe9bf76f07c8150f59fea708595a6dcda89
