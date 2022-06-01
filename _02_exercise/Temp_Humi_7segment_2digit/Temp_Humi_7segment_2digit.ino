@@ -29,7 +29,7 @@ void displayDigit(int num){
 
 void setup() {
      Serial.begin(9600);
-  for(int i=3;i<11;i++){
+  for(int i=3;i<13;i++){
     pinMode(i, OUTPUT);
   }
 }
@@ -40,36 +40,45 @@ void loop() {
     {
       int Temp10=(temp/10);
       int Temp1=temp-Temp10*10;
-      delay(10);
+    for(int te=1;te<1000;te++){
+      digitalWrite(11,0);
+      digitalWrite(12,1);
       digitalWrite(10,0); //온도는 . 빼고 표시
       displayDigit(Temp10);
-      delay(300);
-      for(int i=3;i<11;i++){
-        digitalWrite(i, 0);
-      }
-      delay(100);
-      
+      delay(10);
+      for(int i=3;i<13;i++){
+      digitalWrite(i, 0);
+         }
+      digitalWrite(11,1);
+      digitalWrite(12,0);
       displayDigit(Temp1);
-      delay(300);
-      
-      for(int i=3;i<11;i++){
+      }
+      delay(10);
+      for(int i=3;i<13;i++){
         digitalWrite(i, 0);
       }
-      delay(100);
-      digitalWrite(6,1), digitalWrite(7,1), digitalWrite(9,1);
-      delay(1000);  
+      //digitalWrite(6,1), digitalWrite(7,1), digitalWrite(9,1);
+      //delay(1000);  
       
       int Humi10=humi/10;
       int Humi1=humi-Humi10*10;
+  for(int hu=1;hu<1000;hu++){
+      digitalWrite(11,0);
+      digitalWrite(12,1);
       displayDigit(Humi10);
-      digitalWrite(10,1); //습도는 .찍고 표시
-      delay(300);
-      for(int i=3;i<11;i++){
-        digitalWrite(i, 0);
-      }
-      delay(100);
+      delay(10);
+       for(int i=3;i<13;i++){
+      digitalWrite(i, 0);
+         }
+      digitalWrite(11,1);
+      digitalWrite(12,0);
       displayDigit(Humi1);
       digitalWrite(10,1); //습도는 .찍고 표시
+  }
+        delay(10);
+      for(int i=3;i<13;i++){
+        digitalWrite(i, 0);
+      }
       delay(1000);   
 
     Serial.print("temperature:");
@@ -91,7 +100,7 @@ void loop() {
   }
   else
   {
-    for(int i=3;i<11;i++){
+    for(int i=3;i<13;i++){
     digitalWrite(i, 0);
 
        Serial.println();
