@@ -1,5 +1,9 @@
 #include <Servo.h> 
+<<<<<<< HEAD
 int servoPin = 9;
+=======
+int servoPin = 2;
+>>>>>>> 18a0d5e (add)
 
 Servo servo; 
 int angle = 0; // servo position in degrees 
@@ -19,4 +23,8 @@ void loop() {
         servo.write(angle); 
         delay(15); 
     } 
+<<<<<<< HEAD
 } 
+=======
+} 
+>>>>>>> 18a0d5e (add)
