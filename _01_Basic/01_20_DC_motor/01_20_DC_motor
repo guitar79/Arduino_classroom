@@ -1,0 +1,21 @@
+#define MOTOR_A_a 3     //모터A의 +출력핀은 3번핀입니다
+#define MOTOR_A_b 11    //모터A의 -출력핀은 11번핀입니다
+#define MOTOR_B_a 5     //모터B의 +출력핀은 5번핀입니다
+#define MOTOR_B_b 6     //모터B의 -출력핀은 6번핀입니다
+#define MOTOR_SPEED 150 //모터의 기준속력입니다(0~255)
+
+void setup(){
+    Serial.begin(9600);  
+    pinMode(MOTOR_A_a, OUTPUT);
+    pinMode(MOTOR_A_b, OUTPUT);
+    pinMode(MOTOR_B_a, OUTPUT);
+    pinMode(MOTOR_B_b, OUTPUT);
+    }
+
+void loop(){
+    digitalWrite(MOTOR_A_a, LOW);     //모터A+ LOW
+    analogWrite(MOTOR_A_b, MOTOR_SPEED);  //모터A-의 속력을 PWM 출력
+    digitalWrite(MOTOR_B_a, MOTOR_SPEED);     //모터A+ LOW
+    analogWrite(MOTOR_B_b, LOW);  //모터A-의 속력을 PWM 출력
+    delay(500);
+    }
