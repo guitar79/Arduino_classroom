@@ -8,7 +8,7 @@
 
 ``` python:_01_11_7segment.ino ```
 
-``` arduino
+``` cpp
 byte digits[10][8] = {
     //a  b  c  .  d  e  f  g
     { 1, 1, 1, 1, 1, 1, 1, 0},  // for displaying 0
