@@ -2,7 +2,13 @@
 
 ![alt text for screen readers](_01_11_7segment_bb.png "Text to show on mouseover")
 
-``` cpp
+# code
+코드는 아래와 같다.
+
+
+``` python:_01_11_7segment.ino ```
+
+``` arduino
 byte digits[10][8] = {
     //a  b  c  .  d  e  f  g
     { 1, 1, 1, 1, 1, 1, 1, 0},  // for displaying 0
